@@ -1,0 +1,122 @@
+body{
+    background-color: darkkhaki;
+    margin: 20px;
+}
+
+#header{
+    grid-area: header;
+    background-color: gray;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+#nav{
+    grid-area: nav;
+    background-color: gray;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    
+}
+#content{
+    grid-area: content;
+    background-color: gray;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+#footer{
+    grid-area: footer;
+    background-color: gray;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+#wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 30px;
+    grid-template-areas:
+    "header" 
+    "nav"
+    "content"
+    "footer";
+    
+}
+li{
+    display: inline;
+    padding: 1vw;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    padding: 30px;
+}
+table{
+    margin: a auto;
+    border: solid black;
+    border-radius: 10px;
+    border-collapse: separate;
+    width: 100%;
+    padding: 20px;
+}
+td:first-child{
+    background-color: azure;
+    text-align: left;
+    border-radius: 5px;
+}
+
+td:last-child{
+    background-color: azure;
+    border-radius: 5px;
+}
+td{
+    background: azure;
+    box-shadow: 3px 2px powderblue;
+    text-align: center;
+    border-radius: 5px;
+}
+tr:first-child{
+    font-weight: bolder;
+    border-radius: 5px;
+
+}
+button
+{
+    margin-bottom: 5%;
+    border-radius: 5px;
+    background-color: aquamarine;
+    border: cornflowerblue 5px;
+}
+
+/* csökkenő sorrend, csak változást jelenitsd meg */
+@media all and (max-width: 600px){
+    body{
+        background-color: rebeccapurple;
+        
+        color: fuchsia;
+    }
+    #wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: white;
+        padding: 20px;
+        grid-template-areas:
+        "header" 
+        "nav"
+        "content"
+        "footer";
+        
+    }
+    
+}
